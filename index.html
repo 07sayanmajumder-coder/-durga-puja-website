@@ -313,189 +313,146 @@
     }
 
 
+
     /* =====================================================
-       DURGA FACE
+       NEW SVG DURGA MAA
     ===================================================== */
 
-    .durga {
+    .durga-svg {
       position: relative;
-
-      width: 260px;
-      height: 330px;
-
+      display: block;
+      width: 380px;
+      height: 380px;
       margin: 35px auto;
-
-      border-radius:
-        50% 50% 46% 46%;
-
-      background:
-        linear-gradient(
-          135deg,
-          #f4b879,
-          #c76543 60%,
-          #76271d
-        );
-
-      border:
-        5px solid #d79a39;
-
-      box-shadow:
-        0 0 60px rgba(225,159,54,.3),
-        inset 0 0 30px rgba(70,15,5,.3);
+      overflow: visible;
+      filter: drop-shadow(0 15px 20px rgba(0,0,0,.35));
     }
 
-    .crown {
-      position: absolute;
-
-      left: 50%;
-
-      top: -95px;
-
-      transform: translateX(-50%);
-
-      width: 180px;
-
-      height: 110px;
-
-      background:
-        linear-gradient(
-          135deg,
-          #f5cf69,
-          #b67620
-        );
-
-      clip-path:
-        polygon(
-          0 100%,
-          15% 25%,
-          35% 65%,
-          50% 0,
-          65% 65%,
-          85% 25%,
-          100% 100%
-        );
+    .svg-glow {
+      fill: none;
+      stroke: #ff9800;
+      stroke-width: 12;
+      opacity: .35;
+      animation: svgGlow 2s infinite alternate;
     }
 
-    .eye {
-      position: absolute;
-
-      top: 120px;
-
-      width: 70px;
-      height: 30px;
-
-      background: #fff4df;
-
-      border-radius: 50%;
-
-      border-bottom:
-        5px solid #4d120c;
+    @keyframes svgGlow {
+      from { opacity: .25; }
+      to { opacity: .65; }
     }
 
-    .eye.left {
-      left: 35px;
-
-      transform:
-        rotate(10deg);
+    .svg-hair {
+      fill: #21140e;
+      stroke: #100805;
+      stroke-width: 3;
+      filter: drop-shadow(0 3px 3px rgba(0,0,0,.25));
     }
 
-    .eye.right {
-      right: 35px;
-
-      transform:
-        rotate(-10deg);
+    .svg-face {
+      fill: #f4a261;
+      stroke: #8d5524;
+      stroke-width: 3;
     }
 
-    .eye::after {
-      content: "";
-
-      position: absolute;
-
-      width: 13px;
-      height: 13px;
-
-      border-radius: 50%;
-
-      background: #21100d;
-
-      left: 50%;
-      top: 50%;
-
-      transform:
-        translate(-50%, -50%);
+    .svg-crown {
+      fill: #ffd700;
+      stroke: #9c7200;
+      stroke-width: 3;
     }
 
-    .third-eye {
-      position: absolute;
-
-      top: 78px;
-      left: 50%;
-
-      transform:
-        translateX(-50%);
-
-      width: 25px;
-      height: 40px;
-
-      border-radius: 50%;
-
-      border:
-        4px solid #64150f;
+    .svg-crown-jewel {
+      fill: #e63946;
+      stroke: #8b0000;
+      stroke-width: 2;
+      animation: jewelShine 1.8s infinite alternate;
     }
 
-    .bindi {
-      position: absolute;
-
-      top: 165px;
-      left: 50%;
-
-      transform:
-        translateX(-50%);
-
-      width: 22px;
-      height: 22px;
-
-      background: #8c1710;
-
-      border-radius: 50%;
+    @keyframes jewelShine {
+      from { opacity: .6; }
+      to { opacity: 1; }
     }
 
-    .nose {
-      position: absolute;
-
-      left: 50%;
-      top: 180px;
-
-      transform:
-        translateX(-50%);
-
-      width: 35px;
-      height: 50px;
-
-      border-right:
-        4px solid #6f281c;
-
-      border-radius: 50%;
+    .svg-gold {
+      fill: #ffd700;
+      stroke: #a47700;
+      stroke-width: 2;
     }
 
-    .lips {
-      position: absolute;
-
-      left: 50%;
-      bottom: 55px;
-
-      transform:
-        translateX(-50%);
-
-      width: 55px;
-      height: 20px;
-
-      border-bottom:
-        6px solid #76150f;
-
-      border-radius: 50%;
+    .svg-red-jewel {
+      fill: #d62828;
+      stroke: #8b0000;
+      stroke-width: 2;
     }
 
+    .svg-eye-white {
+      fill: white;
+      stroke: #4a1c1c;
+      stroke-width: 2;
+    }
+
+    .svg-eye {
+      fill: #111;
+    }
+
+    .svg-eyebrow {
+      fill: none;
+      stroke: #3b1710;
+      stroke-width: 5;
+      stroke-linecap: round;
+    }
+
+    .svg-third-eye {
+      fill: white;
+      stroke: #8d5524;
+      stroke-width: 1;
+    }
+
+    .svg-bindi {
+      fill: #c1121f;
+    }
+
+    .svg-nose {
+      fill: none;
+      stroke: #8d5524;
+      stroke-width: 3;
+      stroke-linecap: round;
+    }
+
+    .svg-lips {
+      fill: #b30035;
+      stroke: #650020;
+      stroke-width: 1.5;
+    }
+
+    .svg-necklace {
+      fill: none;
+      stroke: #ffd700;
+      stroke-width: 8;
+      stroke-linecap: round;
+    }
+
+    .svg-trishul {
+      fill: #ffd700;
+      stroke: #8b6508;
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      filter: drop-shadow(0 3px 3px rgba(0,0,0,.35));
+    }
+
+    .svg-trishul-handle {
+      fill: none;
+      stroke: #8b6508;
+      stroke-width: 6;
+      stroke-linecap: round;
+      filter: drop-shadow(0 2px 2px rgba(0,0,0,.3));
+    }
+
+    .svg-trishul-ring {
+      fill: #ffd700;
+      stroke: #8b6508;
+      stroke-width: 3;
+    }
 
     /* =====================================================
        DHAK BUTTON
@@ -1375,9 +1332,9 @@
         padding: 75px 5%;
       }
 
-      .durga {
-        width: 210px;
-        height: 280px;
+      .durga-svg {
+        width: 300px;
+        height: 300px;
       }
 
       .memory-grid {
@@ -1505,25 +1462,239 @@
       </p>
 
 
-      <!-- DURGA FACE -->
 
-      <div class="durga">
+      <!-- NEW SVG DURGA MAA -->
 
-        <div class="crown"></div>
+      <svg
+        class="durga-svg"
+        viewBox="0 0 300 300"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-label="Durga Maa">
 
-        <div class="third-eye"></div>
+        <!-- Divine Glow -->
+        <circle
+          class="svg-glow"
+          cx="150"
+          cy="150"
+          r="130"
+        />
 
-        <div class="eye left"></div>
+        <!-- =====================================
+             DURGA MAA LONG FLOWING HAIR
+        ====================================== -->
 
-        <div class="eye right"></div>
+        <!-- Main Hair -->
+        <path
+          class="svg-hair"
+          d="
+            M75 145
+            Q35 100 70 55
+            Q100 18 150 32
+            Q200 18 230 55
+            Q265 100 225 145
+            Q255 175 245 215
+            Q238 250 210 280
+            Q190 295 175 275
+            Q160 295 150 275
+            Q135 295 120 275
+            Q90 295 80 260
+            Q65 225 75 190
+            Q45 165 75 145
+            Z
+          "
+        />
 
-        <div class="bindi"></div>
+        <!-- Left Flowing Hair -->
+        <path
+          class="svg-hair"
+          d="
+            M85 105
+            Q45 120 50 165
+            Q35 205 55 245
+            Q65 265 90 275
+            Q78 235 90 195
+            Q100 145 85 105
+            Z
+          "
+        />
 
-        <div class="nose"></div>
+        <!-- Right Flowing Hair -->
+        <path
+          class="svg-hair"
+          d="
+            M215 105
+            Q255 120 250 165
+            Q265 205 245 245
+            Q235 265 210 275
+            Q222 235 210 195
+            Q200 145 215 105
+            Z
+          "
+        />
 
-        <div class="lips"></div>
+        <!-- Hair Highlights -->
+        <path
+          d="M82 90 Q55 135 72 180 Q58 220 78 250"
+          fill="none"
+          stroke="#4a2a1a"
+          stroke-width="6"
+          stroke-linecap="round"
+          opacity=".7"
+        />
 
-      </div>
+        <path
+          d="M218 90 Q245 135 228 180 Q242 220 222 250"
+          fill="none"
+          stroke="#4a2a1a"
+          stroke-width="6"
+          stroke-linecap="round"
+          opacity=".7"
+        />
+
+        <!-- Crown -->
+        <path
+          class="svg-crown"
+          d="
+            M88 92
+            L103 35
+            L125 57
+            L150 18
+            L175 57
+            L197 35
+            L212 92
+            Z
+          "
+        />
+
+        <!-- Crown Jewels -->
+        <circle class="svg-crown-jewel" cx="150" cy="43" r="9"/>
+        <circle class="svg-red-jewel" cx="113" cy="65" r="5"/>
+        <circle class="svg-red-jewel" cx="187" cy="65" r="5"/>
+
+        <!-- Face -->
+        <ellipse
+          class="svg-face"
+          cx="150"
+          cy="145"
+          rx="68"
+          ry="85"
+        />
+
+        <!-- Earrings -->
+        <circle class="svg-gold" cx="80" cy="155" r="14"/>
+        <circle class="svg-gold" cx="220" cy="155" r="14"/>
+        <circle class="svg-red-jewel" cx="80" cy="155" r="5"/>
+        <circle class="svg-red-jewel" cx="220" cy="155" r="5"/>
+
+        <!-- Eyes -->
+        <path
+          class="svg-eye-white"
+          d="M99 135 Q120 114 141 135 Q120 151 99 135 Z"
+        />
+        <circle class="svg-eye" cx="120" cy="135" r="6"/>
+
+        <path
+          class="svg-eye-white"
+          d="M159 135 Q180 114 201 135 Q180 151 159 135 Z"
+        />
+        <circle class="svg-eye" cx="180" cy="135" r="6"/>
+
+        <!-- Eyebrows -->
+        <path
+          class="svg-eyebrow"
+          d="M100 120 Q120 104 140 120"
+        />
+        <path
+          class="svg-eyebrow"
+          d="M160 120 Q180 104 200 120"
+        />
+
+        <!-- Third Eye -->
+        <path
+          class="svg-third-eye"
+          d="M140 103 Q150 90 160 103 Q150 115 140 103 Z"
+        />
+        <circle class="svg-bindi" cx="150" cy="103" r="5"/>
+
+        <!-- Nose -->
+        <path
+          class="svg-nose"
+          d="M150 140 Q142 160 150 165 Q158 160 150 140"
+        />
+
+        <!-- Nose Ring -->
+        <circle class="svg-gold" cx="158" cy="165" r="6"/>
+
+        <!-- Lips -->
+        <path
+          class="svg-lips"
+          d="M130 180 Q150 168 170 180 Q150 198 130 180 Z"
+        />
+
+        <!-- Necklace -->
+        <path
+          class="svg-necklace"
+          d="M95 205 Q150 245 205 205"
+        />
+
+        <circle class="svg-red-jewel" cx="120" cy="220" r="5"/>
+        <circle class="svg-gold" cx="150" cy="230" r="7"/>
+        <circle class="svg-red-jewel" cx="180" cy="220" r="5"/>
+
+        <!-- Traditional Trishul -->
+        <g class="svg-trishul">
+
+          <!-- Left Blade -->
+          <path
+            d="
+              M250 78
+              C235 70 220 55 220 35
+              C220 27 223 20 228 15
+              C227 35 235 50 250 58
+              Z
+            "
+          />
+
+          <!-- Center Blade -->
+          <path
+            d="
+              M250 75
+              L250 15
+              L258 38
+              L250 75
+              Z
+            "
+          />
+
+          <!-- Right Blade -->
+          <path
+            d="
+              M250 78
+              C265 70 280 55 280 35
+              C280 27 277 20 272 15
+              C273 35 265 50 250 58
+              Z
+            "
+          />
+
+          <!-- Decorative Ring -->
+          <ellipse
+            class="svg-trishul-ring"
+            cx="250"
+            cy="82"
+            rx="14"
+            ry="7"
+          />
+
+        </g>
+
+        <!-- Trishul Handle -->
+        <path
+          class="svg-trishul-handle"
+          d="M250 88 L250 275"
+        />
+
+      </svg>
 
 
       <button
@@ -1770,17 +1941,10 @@
 
         <div class="pandal-image">
 
-          <div class="image-placeholder">
+          <img
+        src="pujopandel1.png">
+        
 
-            <strong>
-              📸 Basudebpur Pandal
-            </strong>
-
-            <span>
-              Add your Basudebpur pandal image here
-            </span>
-
-          </div>
 
           <div class="image-overlay">
             📍 SHYAMNAGAR
@@ -1831,17 +1995,9 @@
 
         <div class="pandal-image">
 
-          <div class="image-placeholder">
-
-            <strong>
-              📸 Banerjee Para Pandal
-            </strong>
-
-            <span>
-              Add your Banerjee Para pandal image here
-            </span>
-
-          </div>
+          <img
+    src="pujopandel2.png"
+>
 
           <div class="image-overlay">
             📍 SHYAMNAGAR
@@ -1936,7 +2092,7 @@
       <div class="food-card reveal">
 
         <div class="food-icon">
-          🫓🥔
+          🥔
         </div>
 
         <h3>
@@ -1953,7 +2109,7 @@
       <div class="food-card reveal">
 
         <div class="food-icon">
-          🟤
+          🥟
         </div>
 
         <h3>
@@ -1970,7 +2126,7 @@
       <div class="food-card reveal">
 
         <div class="food-icon">
-          🍚
+          🍮
         </div>
 
         <h3>
@@ -1987,7 +2143,7 @@
       <div class="food-card reveal">
 
         <div class="food-icon">
-          🍆
+          🥞
         </div>
 
         <h3>
